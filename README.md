@@ -1,3 +1,0 @@
-# CV
-
-Interactive CV project
