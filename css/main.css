@@ -1,0 +1,191 @@
+
+*,::before,::after{
+  box-sizing: border-box;
+  --clr-accent: #43638f;
+}
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.projects-section{
+    display: block;
+    background-color: #fff;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    width: 70%;
+    font-size: clamp(1.5rem, calc(5vw + 1rem), 3rem);
+    border-radius: 5%;
+    
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #17353d;
+    font-family: 'Noto Sans JP', sans-serif; 
+    display: flex;
+    margin-bottom: 3rem;
+    position: -webkit-sticky !important; /* Safari */
+    position: sticky !important;
+    z-index: 10;
+    width: 100%;
+    display: -webkit-flex;
+    column-gap: 1rem;
+    top: 0;
+    justify-content: center;
+}
+
+.navbar a {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  width: 10%;
+}
+  
+section{
+    margin-bottom: 2rem;
+}
+
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #204954;
+  transform: translateY(-5px);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+h1,h2,h3,p{
+    margin: 0;
+    text-align: center center;
+}
+
+h1{
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
+}
+
+.experience-container{
+  color: #204954;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+.experience-header{
+  font-weight: bold;
+  position: relative;
+  top: 0px;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 24 !important;
+}
+
+.experience-span{
+  position: relative;
+  top: 0px;
+  justify-content: center;
+  font-size: 12 !important;
+}
+
+.spacing > * + *{
+    margin-top: var(--spacer, 2rem);
+}
+
+.about-section {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  width: 70%;
+  font-size: clamp(1.5rem, calc(5vw + 1rem), 3rem);
+  border-radius: 5%;
+}
+
+.cv-section {
+  display: block;
+  background-color: #fff;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  width: 70%;
+  font-size: clamp(1.5rem, calc(5vw + 1rem), 3rem);
+  border-radius: 5%;
+}
+
+
+
+.scale{
+  width: 40%;
+  display: inline-block;
+}
+
+.sample-header {
+    width: 100%;
+    background-image: url("../img/programming.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    justify-content: center;
+  }
+  .sample-header::before {
+    content: "";
+    background-color: MidnightBlue;
+    opacity: 0.3;
+  }
+  .sample-header-section {
+    position: relative;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .projects-section-title{
+    color: white;
+    margin-bottom: 3rem;
+    background-color: #17353d;
+  }
