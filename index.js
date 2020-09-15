@@ -10,7 +10,6 @@ function smoothScroll(target) {
         }
         var timeElapsed = currentTime - startTime;
         var run = ease(timeElapsed, startPosition, targetPosition, 1000);
-        console.log(run);
         window.scrollTo(0, run);
         if(timeElapsed < 1000) {
             requestAnimationFrame(animation);
@@ -28,3 +27,8 @@ function smoothScroll(target) {
     }
     requestAnimationFrame(animation);
 }
+
+
+function openWebpage(url) { 
+    window.open(url, "_blank"); 
+} 
